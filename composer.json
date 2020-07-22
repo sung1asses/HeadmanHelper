@@ -14,7 +14,9 @@
         "guzzlehttp/guzzle": "^6.3",
         "jeremykenedy/laravel-roles": "^3.2",
         "laravel/framework": "^7.0",
-        "laravel/nova": "~3.0",
+        "infyomlabs/laravel-generator": "7.0.x-dev",
+        "laravelcollective/html": "^6.1",
+        "infyomlabs/adminlte-templates": "7.0.x-dev",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
         "phpoffice/phpword": "^0.17.0"
