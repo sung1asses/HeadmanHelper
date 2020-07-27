@@ -8,7 +8,7 @@ use Illuminate\Notifications\Notifiable;
 
 use jeremykenedy\LaravelRoles\Traits\HasRoleAndPermission;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
     use HasRoleAndPermission;

@@ -12,13 +12,15 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
+        "appointer/swaggervel": "dev-master",
+        "infyomlabs/swagger-generator": "dev-master",
+        "infyomlabs/adminlte-templates": "7.0.x-dev",
+        "infyomlabs/laravel-generator": "7.0.x-dev",
         "jeremykenedy/laravel-roles": "^3.2",
         "laravel/framework": "^7.0",
-        "infyomlabs/laravel-generator": "7.0.x-dev",
-        "laravelcollective/html": "^6.1",
-        "infyomlabs/adminlte-templates": "7.0.x-dev",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
+        "laravelcollective/html": "^6.1",
         "phpoffice/phpword": "^0.17.0"
     },
     "require-dev": {
@@ -68,8 +70,8 @@
     },
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
+            "type": "vcs",
+            "url":  "git@github.com:InfyOmLabs/swaggervel.git"
         }
     ]
 }

@@ -17,5 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('generate-docx', 'HomeController@generateDocx');
-Route::get('read-docx', 'HomeController@readDocx');
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->middleware('verified');
+
+
+
+Route::resource('tests', 'TestController');
+
+Route::resource('questions', 'QuestionController');
