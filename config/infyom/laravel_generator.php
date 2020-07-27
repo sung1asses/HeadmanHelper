@@ -124,7 +124,7 @@ return [
 
         'softDelete' => true,
 
-        'save_schema_file' => false,
+        'save_schema_file' => true,
 
         'localized' => false,
 
@@ -166,7 +166,7 @@ return [
 
         'tests'         => true,
 
-        'datatables'    => false,
+        'datatables'    => true,
 
         'menu'          => [
 

@@ -1,0 +1,54 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "title",
+        "dbType": "string:default,'Title'",
+        "htmlType": "text",
+        "validations": "required:unique",
+        "searchable": true
+    },
+    {
+        "name": "description",
+        "dbType": "text:nullable",
+        "htmlType": "textarea",
+        "validations": "required:min,30",
+        "searchable": true
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Message"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

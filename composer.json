@@ -9,19 +9,22 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "appointer/swaggervel": "dev-master",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
-        "appointer/swaggervel": "dev-master",
-        "infyomlabs/swagger-generator": "dev-master",
         "infyomlabs/adminlte-templates": "7.0.x-dev",
         "infyomlabs/laravel-generator": "7.0.x-dev",
+        "infyomlabs/swagger-generator": "dev-master",
         "jeremykenedy/laravel-roles": "^3.2",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.1",
         "laravelcollective/html": "^6.1",
-        "phpoffice/phpword": "^0.17.0"
+        "phpoffice/phpword": "^0.17.0",
+        "yajra/laravel-datatables-buttons": "^4.0",
+        "yajra/laravel-datatables-html": "^4.0",
+        "yajra/laravel-datatables-oracle": "~9.0"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

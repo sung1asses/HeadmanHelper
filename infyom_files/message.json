@@ -1,0 +1,57 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "text",
+        "dbType": "text:nullable",
+        "htmlType": "textarea",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "author",
+        "dbType": "string:default,'Omega Pepega'",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "post_id",
+        "dbType": "integer:unsigned:foreign,posts,id",
+        "htmlType": "selectTable:posts:title,id",
+        "validations": "",
+        "relation": "mt1,Post,post_id,id"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

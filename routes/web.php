@@ -23,6 +23,30 @@ Route::get('/home', 'HomeController@index')->middleware('verified');
 
 
 
-Route::resource('tests', 'TestController');
 
-Route::resource('questions', 'QuestionController');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::resource('posts', 'PostController');
+
+Route::resource('messages', 'MessageController');
