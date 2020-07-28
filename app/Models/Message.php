@@ -50,7 +50,7 @@ class Message extends Model
     use SoftDeletes;
 
     public $table = 'messages';
-    
+
 
     protected $dates = ['deleted_at'];
 

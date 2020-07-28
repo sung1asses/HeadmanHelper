@@ -42,6 +42,10 @@ class ViewServiceProvider extends ServiceProvider
             $postItems = Post::pluck('title','id')->toArray();
             $view->with('postItems', $postItems);
         });
+        View::composer(['messages.fields'], function ($view) {
+            $postItems = Post::pluck('title','id')->toArray();
+            $view->with('postItems', $postItems);
+        });
         View::composer(['questions.fields'], function ($view) {
             $testItems = Test::pluck('title','id')->toArray();
             $view->with('testItems', $testItems);

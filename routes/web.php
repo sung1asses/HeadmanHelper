@@ -47,6 +47,12 @@ Route::get('/home', 'HomeController@index')->middleware('verified');
 
 
 
+
+
+
+
+
+
 Route::resource('posts', 'PostController');
 
 Route::resource('messages', 'MessageController');

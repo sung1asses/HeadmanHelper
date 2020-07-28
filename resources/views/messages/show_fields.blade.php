@@ -13,7 +13,7 @@
 <!-- Post Id Field -->
 <div class="form-group">
     {!! Form::label('post_id', 'Post:') !!}
-    <a href="{{ url("posts/{$message->post_id}") }}">{{ $message->post()->first()->title }}</a>
+    <a href="{{ url('posts/'.$message->post_id) }}">{{ $message->post()->first()->title }}</a>
 </div>
 
 <!-- Created At Field -->
