@@ -37,7 +37,7 @@
     },
     {
         "name": "post_id",
-        "dbType": "integer:unsigned:foreign,posts,id",
+        "dbType": "integer:unsigned:foreign,posts,id,cascade",
         "htmlType": "selectTable:posts:title,id",
         "validations": "",
         "searchable": false,
@@ -73,6 +73,6 @@
     },
     {
         "type": "relation",
-        "relation": "mt1,Posts,post_id,id"
+        "relation": "mt1,Post,post_id,id"
     }
 ]

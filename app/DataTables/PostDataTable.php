@@ -66,7 +66,7 @@ class PostDataTable extends DataTable
     {
         return [
             'title',
-            'description'
+            'description' => ['searchable' => false],
         ];
     }
 

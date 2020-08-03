@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-
-use jeremykenedy\LaravelRoles\Traits\HasRoleAndPermission;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use Notifiable;
-    use HasRoleAndPermission;
+    use \Illuminate\Notifications\Notifiable;
+    use \jeremykenedy\LaravelRoles\Traits\HasRoleAndPermission;
+    use \Askedio\SoftCascade\Traits\SoftCascadeTrait;
+
+    protected $softCascade = ['roles', 'permissions'];
 
     /**
      * The attributes that are mass assignable.

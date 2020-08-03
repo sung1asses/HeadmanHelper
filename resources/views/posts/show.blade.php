@@ -11,7 +11,8 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('posts.show_fields')
-                    <a href="{{ route('posts.index') }}" class="btn btn-default">Back</a>
+                    <a href="{{ URL::previous() }}" class="btn btn-default">Back</a>
+                    <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-warning">Edit</a>
                 </div>
             </div>
         </div>

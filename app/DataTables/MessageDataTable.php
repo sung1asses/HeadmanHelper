@@ -18,7 +18,10 @@ class MessageDataTable extends DataTable
     {
         $dataTable = new EloquentDataTable($query);
 
-        return $dataTable->addColumn('action', 'messages.datatables_actions');
+        return $dataTable->addColumn('action', 'messages.datatables_actions')
+        ->editColumn('post.title', function($request){
+            return '<a href="'.route('messages.show', $request->post->id).'">'.$request->post->title.'</a>';
+        });
     }
 
     /**
@@ -29,8 +32,7 @@ class MessageDataTable extends DataTable
      */
     public function query(Message $model)
     {
-        return $model->newQuery();
-        // return $model->newQuery()->with('post');
+        return $model->newQuery()->with('post');
     }
 
     /**
@@ -67,13 +69,9 @@ class MessageDataTable extends DataTable
     {
         return [
             'text',
-            'author'
+            'author',
+            'post.title'
         ];
-        // return [
-        //     'text',
-        //     'author',
-        //     'post.title' => ['title' => 'Post'],
-        // ];
     }
 
     /**

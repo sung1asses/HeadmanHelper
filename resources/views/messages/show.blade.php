@@ -11,7 +11,8 @@
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
                     @include('messages.show_fields')
-                    <a href="{{ route('messages.index') }}" class="btn btn-default">Back</a>
+                    <a href="{{ URL::previous() }}" class="btn btn-default">Back</a>
+                    <a href="{{ route('messages.edit', $message->id) }}" class="btn btn-warning">Edit</a>
                 </div>
             </div>
         </div>
